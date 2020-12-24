@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <canvas id="canvas"></canvas>
+    <button onclick="start()">Start</button>
+  </body>
+
+  <script type="text/javascript" src="jsmpeg.min.js"></script>
+  <script type="text/javascript">
+    function start() {
+      player = new JSMpeg.Player("ws://grepawk.com:8002", {
+        canvas: document.getElementById("canvas"), // Canvas should be a canvas DOM element
+      });
+    }
+  </script>
+</html>
