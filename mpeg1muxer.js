@@ -27,8 +27,8 @@ Mpeg1Muxer = function (options) {
     this.url,
     "-f",
     "mpegts",
-    "-codec:a",
-    "pcm_mulaw",
+    "-codec:v",
+    "mpeg1video",
     // additional ffmpeg options go here
     ...this.additionalFlags,
     "-",
